@@ -1,0 +1,132 @@
+/* General Styles */
+body {
+  background-color: #2f2f2f;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: row;
+}
+
+/* Header Styles */
+header {
+  text-align: center;
+  margin-top: 50px;
+}
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 36px;
+  margin-top: 0;
+}
+
+/* Clock Styles */
+#clock {
+  background-color: #fff;
+  color: #333;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#timer-label {
+  font-size: 36px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+#time-left {
+  font-size: 96px;
+  margin-bottom: 20px;
+}
+
+#session-label, #break-label {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#session-length, #break-length {
+  font-size: 36px;
+}
+
+#session-decrement, #session-increment, #break-decrement, #break-increment {
+  display: inline-block;
+  margin: 10px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 24px;
+  color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#session-decrement, #break-decrement {
+  background-color: #dd4814;
+}
+
+#session-increment, #break-increment {
+  background-color: #28a745;
+}
+
+#start_stop, #reset {
+  display: block;
+  margin: 30px auto;
+  width: 100px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 24px;
+  color: #fff;
+  background-color: #007bff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#start_stop {
+  background-color: #28a745;
+}
+
+#reset {
+  background-color: #dd4814;
+}
+
+/* Media Queries */
+@media screen and (max-width: 600px) {
+  #clock {
+    width: 300px;
+    height: 300px;
+  }
+  
+  #time-left {
+    font-size: 64px;
+  }
+  
+  #session-length, #break-length {
+    font-size: 24px;
+  }
+  
+  #session-decrement, #session-increment, #break-decrement, #break-increment {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 18px;
+  }
+  
+  #start_stop, #reset {
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+  }
+}
